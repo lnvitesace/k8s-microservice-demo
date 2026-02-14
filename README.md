@@ -8,17 +8,17 @@ A hands-on learning project that demonstrates how to build, containerize, and de
                          ┌──────────────────────────────────────────┐
                          │           Kubernetes Cluster             │
                          │                                          │
-  Browser ──────────────▶│  ┌───────────┐        ┌──────────────┐  │
-        NodePort 30080   │  │ Frontend  │  /api/  │   Backend    │  │
-                         │  │  (Nginx)  │────────▶│  (FastAPI)   │  │
-                         │  │  1 replica│  proxy  │  2 replicas  │  │
-                         │  └───────────┘        └──────┬───────┘  │
-                         │                              │          │
-                         │                              ▼          │
-                         │                       ┌──────────────┐  │
-                         │                       │  PostgreSQL  │  │
-                         │                       │  (Alpine)    │  │
-                         │                       └──────────────┘  │
+  Browser ──────────────▶│  ┌───────────┐        ┌──────────────┐   │
+        NodePort 30080   │  │ Frontend  │  /api/ │   Backend    │   │
+                         │  │  (Nginx)  │───────▶│  (FastAPI)   │   │
+                         │  │  1 replica│  proxy │  2 replicas  │   │
+                         │  └───────────┘        └──────┬───────┘   │
+                         │                              │           │
+                         │                              ▼           │
+                         │                       ┌──────────────┐   │
+                         │                       │  PostgreSQL  │   │
+                         │                       │  (Alpine)    │   │
+                         │                       └──────────────┘   │
                          └──────────────────────────────────────────┘
 ```
 
